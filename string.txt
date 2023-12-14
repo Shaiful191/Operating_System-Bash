@@ -1,0 +1,59 @@
+#string:
+
+string="sjk"
+echo ${#string} #string length ber kora hoy aivave.
+echo ""
+
+string="My name is redoy"
+substring="yd"
+
+expr index "$string" "$substring" #aita asole c++ er moto substring khoje na ai ta character by character khoje.jamon aikhane suru te y search kore suru 2 number index a paise tai print korse jodi y na paiya age d paito taile index 14 hoito. r kisu na paile 0 dakhabe.
+echo ""
+
+string="My name is redoy"
+pos=5
+echo ${string:$pos} #mane pos jai index oi index thika suru kore end position bole na dile end projinto print korve.
+strt=3
+end=4 #suru position thake koro gor jave.
+echo ${string:$strt:$end}
+echo ""
+
+#Finding first name from this data:
+Data="last=clifford,first=Johnny Boy,state=ca"
+comma1=`expr index "$Data" ","`
+echo $comma1
+
+extract1=${Data:$comma1}
+echo $extract1
+
+comma2=`expr index "$extract1" ","`
+echo $comma2
+len=`expr $comma2 - 6 - 1 `
+firstname=${extract1:6:$len}
+echo $firstname
+
+
+#replace:
+string="to be or not to be"
+echo ${string[@]/be/late} #surute be er jaygay replace korse late dara.
+
+string="to be or not to be"
+echo ${string[@]//be/late} #sov be er jaygay replace korse late dara.
+
+string="to be or not to be"
+echo ${string[@]//be/} #be er jaygay faka rakhbo
+
+string="to be or not to be"
+echo ${string[@]/#be/late}  #akbare suru te thake surur ta r na thakle kisu hove na ta replace hove
+
+string="to be or not to be"
+echo ${string[@]//#to/late} 
+
+string="to be or not to be"
+echo ${string[@]/%be/late} #saser ta replace hove
+
+
+
+
+
+

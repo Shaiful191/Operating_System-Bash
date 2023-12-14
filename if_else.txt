@@ -1,0 +1,28 @@
+
+
+c=30
+if [ $c -gt 10 -a $c -lt 15 ]   
+then 
+    echo c is gater then 10 but less then 15
+elif [ $c -eq 10 -o  $c -le  10 ] 
+then
+    echo c is less than or equal 9
+else 
+    echo c is bigger than 15 
+fi
+
+
+# "-a = && , -o= || , -gt=gater than , -lt=less than ,-eq = equal,-le=less than or equal,-ge=gater than or equal ,-ne=not equal,!=not. "
+
+
+# "Reminder if ba elif sobkhani condition er jaygay pura line ar protita chacter er sas a akta space dite hove naile error dakhabe. and ami caile condition er jaygay sob kaj c++ er moto o korte pari tove saikhatre (()) er bitore korte hove."
+
+if(($c>=30 && $c<40)) 
+then
+echo "c is $c"
+elif(($c>50))
+then 
+echo "c is geter than 50"
+else 
+echo "nothing"
+fi 

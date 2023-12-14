@@ -1,0 +1,33 @@
+            #function:
+input(){
+  read a 
+ 
+}
+
+print()
+{
+
+  echo "what is your name?"  
+  input    #ai khan thika call dilam input function ke.
+  echo  "welcome " $a
+}
+
+print   #jahatu aita main function tai ai khane thika call dilam print function ke.
+
+
+
+
+#paramiterized function:
+print1() {
+   
+    echo $1 
+    echo $@ #@ aita diye all bujay
+
+   return 10  #aita sobsomoy number  return kore
+}
+
+print1 hello world 51   #ai khan thika print1 function ke call dilam 3 ta paramiter diye.
+
+retn=$?  #print1 function ta jai value return korse saita retn namok akta variable a rakhsi $? diye.
+
+echo $retn 

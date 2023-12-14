@@ -1,0 +1,53 @@
+#VARIABLE & DISPLAY
+a="shaiful";
+echo "My name is a"
+echo "My name is $a"
+a=21
+echo "I am  $a years old"
+
+
+#USER INPUT
+echo "Enter your Id:"
+read b
+echo "Your id is $b"
+
+echo -n  "Enter your varsity name:" #-n dile new line ta kate day.
+read c 
+echo $c 
+
+read -p "Enter your department name:" d #ami jodi ak e line a print korte cai o input nite cai. taile -p use kora hoy.
+echo "Your department name is $d"
+
+read -s -p "Enter your password: " pass #-s(secure)diye ami input hide korte pare.
+echo " $pass"
+
+
+
+#CALCULATION
+a=30
+b=10 
+sum=$((a+b))
+echo $sum
+
+sum1=`expr $a + $b` #aita sudu sum kore onno kono operation kore na.
+echo $sum1 
+
+sub=$((a-b))
+echo $sub 
+
+mul=$((a*b))
+echo $mul 
+
+div=$((a/b))
+echo $div 
+
+b=9
+mod=$((a%b))
+echo $mod
+
+
+
+
+
+
+

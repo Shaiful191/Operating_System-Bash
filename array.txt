@@ -1,0 +1,19 @@
+#array 
+read n
+for i in $(seq 1 1 $n) # majkhaner ta increment or decriment bujay. decriment korle -1 hove.
+do
+read a[i]
+done
+echo ${a[@]}
+echo ${a[3]}
+echo ${#a[@]}
+
+echo "TYPE-2"
+array=(12 hi 15 133333 6)
+echo ${array[@]:1}
+echo ${array[*]:2:4} # @ r * akoi all bujay
+echo ${#array[1]}
+array[6]='191'
+echo ${array[@]}
+unset array[1]		 #2 no index ta delete kore.index na dile pura array delete koira dito.
+echo ${array[@]}
